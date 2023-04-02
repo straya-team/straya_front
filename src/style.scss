@@ -1,0 +1,274 @@
+.formContainer{
+    background-color: #0E8388; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    .logo{
+        width: 150px;
+    }
+    .formWrapper{
+        background-color: #2C3333;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        
+        .title
+        {
+            
+            color: #0E8388;
+            font-size: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction:column ;
+            gap: 15px;
+            input
+            {
+                padding: 15px;
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid #0E8388;
+                &::placeholder{
+                    color: #0E8388;
+                }
+            }
+            button
+            {
+                background-color: #CBE4DE;
+                color: #0E8388;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: 0.5s;
+               
+            }
+            button:hover{
+                color: #CBE4DE;
+                background-color: #0E8388;
+                transition: 0.5s;
+                transform: scale(1.05);
+
+            }
+            img 
+            {
+                max-width: 10%;
+                height: auto;
+                cursor: pointer;
+            }
+            label
+            {
+                display: flex;
+                align-items: center;
+                gap:10px;
+                color: #0E8388;
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+        
+        p
+        {
+            color: #0E8388 ;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+   
+    }
+    
+}
+.link{
+    font-size: 25px;
+    font-weight: 600;
+}
+a{
+    color:#CBE4DE;
+}
+
+nav{
+    background-color: #2C3333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+    .logo{
+        width: 150px;
+        padding: 10px;
+        
+    }
+    .profilePic{
+        width: 50px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .prof{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .search{
+        width: 500px;
+        height: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    .logoutBTN{
+        padding: 10px 30px;
+        background-color: white;
+        border-radius: 20px;
+        transition: 0.5s;
+        color: #0E8388;
+        font-weight: bold;
+        border: 1px solid #0E8388;
+        cursor: pointer;
+    }
+    .logoutBTN:hover{
+        background-color: #0E8388;
+        border: 1px solid white;
+        transform: scale(1.05);
+        transition: 0.5s;
+        color: white;
+    }
+    
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    input{
+        width: 400px;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+    }
+}
+.profile{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    .profilePic{
+        width: 200px;
+        border-radius: 50%;
+    }
+}
+.checkBoxMenu{
+    padding: 10px 0 0 30px;
+    background-color: #0E8388;
+    max-width: 20%;
+    height: 81.5vh;
+    .Menu{
+        padding-left: 20px;
+    }
+}
+.dropdown{
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    user-select: none;
+    border-bottom: 1px solid white;
+    .dropdownBTN{
+        color: #CBE4DE;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .dropdownContent{
+        position: absolute;
+        top: 110%;
+        background-color: #CBE4DE;
+        width: 100%;
+        color: #2C3333;
+        .dropdownItem{
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .dropdownItem:hover{
+            background-color: #9dd7ca;
+        }
+    }
+}
+.product{
+    background-color: #0E8388;
+    height: 100vh;
+    .formulaireP{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        h1{
+            color: white;
+            text-transform:capitalize ;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            input{
+                width: 100%;
+                padding: 10px 0;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                color: white;
+                &::placeholder{
+                    color: #CBE4DE;
+                    text-transform:capitalize ;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            label{
+                input{
+                    display: none;
+                }
+                cursor: pointer;
+                color: white;
+                text-transform: capitalize;
+            }
+            button{
+                width: 200px;
+                border-radius: 20px;
+                padding: 10px;
+                font-size: 15px;
+                color: #0E8388;
+                border: 1px solid #0E8388;
+                cursor: pointer;
+                transition: 0.5s;
+                text-transform: capitalize;
+            }
+            button:hover{
+                background-color: #0E8388;
+                border:1px solid white ;
+                color: white;
+                scale: 1.05;
+                transition: 0.5s;
+            }
+            .file{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            img 
+            {
+                max-width: 20%;
+                height: auto;
+            }
+        }
+    }
+}
