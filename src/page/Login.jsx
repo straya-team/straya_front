@@ -27,7 +27,7 @@ const Login = () => {
     <div className="formContainer">
     <div className="formWrapper">
         <img src={logo} alt="" className="logo"/>
-        <span className="title">Login</span>
+        <span className="title">Loginnn</span>
         <form>
           <input
             type="email"
