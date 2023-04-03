@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/Logo.png'
+import logo from '../img/logo.png'
 import profilePic from "../img/profile.webp"
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";

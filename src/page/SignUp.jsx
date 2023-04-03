@@ -4,7 +4,7 @@ import Add from "../img/add.png";
 import { auth, storage } from "../firebase";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { getDownloadURL, ref as sRef, uploadBytes } from "firebase/storage";
-import logo from "../img/Logo.png"
+import logo from "../img/logo.png"
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
