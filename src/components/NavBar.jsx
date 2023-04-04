@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../img/logo.png'
+import panier from '../img/panier.png'
 import profilePic from "../img/profile.webp"
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
@@ -21,7 +22,7 @@ const NavBar = () => {
         <img src={logo} alt="" className='logo'/>
         <Search />
         <div className='prof'>
-            <p>panier</p>
+            <img src={panier} alt="" className='panier' />
             <img src={profilePic} alt="" className='profilePic'/>
             <button onClick={LogOut} className="logoutBTN">log out</button>
             </div>
