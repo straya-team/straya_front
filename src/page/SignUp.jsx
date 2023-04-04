@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import Add from "../img/add.png";
 import { auth, storage } from "../firebase";
@@ -55,10 +55,9 @@ const SignUp = () => {
         window.location.href = '/';
       })
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
         // ..
-        console.log(errorMessage);
+        alert(errorMessage);
       });
   };
   return (

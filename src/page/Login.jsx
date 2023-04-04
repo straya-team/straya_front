@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { auth } from "../firebase";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import logo from "../img/logo.png"
 
 
@@ -17,9 +17,8 @@ const Login = () => {
         window.location.href = '/';
       })
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(error);
+        alert(errorMessage);
       });
 };
 

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Login from "./page/Login";
 import "./style.scss";
 import SignUp from "./page/SignUp";
 import Profile from "./page/Profile";
 import Main from "./page/Main";
-import { BrowserRouter, createBrowserRouter, createRoutesFromElements, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Product from "./page/Product";
 
 function App() {
