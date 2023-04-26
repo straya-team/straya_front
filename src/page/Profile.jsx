@@ -23,6 +23,8 @@ const Profile = (props) => {
   return (
     <div>
       <NavBar />
+      <div className="empty"></div>
+
       <div className="profile">
         <img src={image ? image : profilePic} alt="" className="profilePic" />
         <p>{username ? username : "user name"}</p>

@@ -7,6 +7,7 @@ import { auth } from "../firebase";
 import Search from './Search';
 
 const NavBar = () => {
+
   const LogOut =()=>{
     signOut(auth).then(() => {
       localStorage.removeItem("current user");
@@ -16,14 +17,25 @@ const NavBar = () => {
     });
     
   }
- 
+  function Panier() {
+    const panierDisplay = document.querySelector('.panierDisplay');
+    panierDisplay.classList.toggle('active');
+  }
+  
   return (
     <nav>
-        <img src={logo} alt="" className='logo'/>
+        <a href="/"><img src={logo} alt="" className='logo'/></a>
         <Search />
         <div className='prof'>
-            <img src={panier} alt="" className='panier' />
-            <img src={profilePic} alt="" className='profilePic'/>
+            <div>
+              <img src={panier} alt="" className='panier' onClick={Panier}/>
+              <div className='panierDisplay'>
+                <p>no product added</p>
+                <hr />
+                <p>total : 0.00 $</p>
+              </div>
+            </div>
+            <a href="/profile"><img src={profilePic} alt="" className='profilePic'/></a>
             <button onClick={LogOut} className="logoutBTN">log out</button>
             </div>
     </nav>
